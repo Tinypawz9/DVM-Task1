@@ -1,1 +1,1 @@
-# DVM-Task1
+# A Bus Booking System implemented using Django framnework and hosted on DigitalOcean
