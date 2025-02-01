@@ -1,1 +1,1 @@
-# A Bus Booking System implemented using Django framnework and hosted on DigitalOcean
+# A Bus Booking System implemented using Django framework and hosted on DigitalOcean
