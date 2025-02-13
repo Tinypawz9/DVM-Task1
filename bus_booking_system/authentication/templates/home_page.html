@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %} Bus Booker {% endblock %}
+{% block title %} Home {% endblock %}
 
 {% block page_title %} Book your bus here {% endblock %}
 
-{% block content %} Welcome {% endblock %}
+{% block content %} 
+    <p>Book your bus tickets easily with our system.</p>
+    <ul>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+    </ul> 
+{% endblock %}

@@ -4,6 +4,13 @@ from django.contrib.auth.models import AbstractUser
 
 
 class CustomUser(AbstractUser):
-    roles = (('passenger', 'Passenger'), ('admin', 'Administrator'))
+    ROLES = (('passenger', 'Passenger'), ('admin', 'Administrator'))
 
-    role = models.CharField(max_length=15, choices=roles, default='passenger')
+    role = models.CharField(max_length=15, choices=ROLES, default='passenger')
+    email = models.EmailField(unique=True)
+
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = ['email']
+
+    def __str__(self):
+        return self.username
